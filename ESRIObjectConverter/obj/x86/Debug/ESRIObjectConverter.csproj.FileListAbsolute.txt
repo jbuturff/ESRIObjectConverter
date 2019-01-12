@@ -1,0 +1,5 @@
+D:\Projects\Demo\ESRIObjectConverter\ESRIObjectConverter\bin\Debug\ESRIObjectConverter.exe
+D:\Projects\Demo\ESRIObjectConverter\ESRIObjectConverter\bin\Debug\ESRIObjectConverter.pdb
+D:\Projects\Demo\ESRIObjectConverter\ESRIObjectConverter\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Demo\ESRIObjectConverter\ESRIObjectConverter\obj\x86\Debug\ESRIObjectConverter.exe
+D:\Projects\Demo\ESRIObjectConverter\ESRIObjectConverter\obj\x86\Debug\ESRIObjectConverter.pdb
