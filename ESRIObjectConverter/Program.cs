@@ -19,17 +19,27 @@ namespace ESRIObjectConverter
             if (args.Length == 0)
             {
                 System.Console.WriteLine("Please enter a file geodatabase to convert.");
-                System.Console.WriteLine("Usage: ESRIObjectConverter <file_gdb>");
+                System.Console.WriteLine("Usage: ESRIObjectConverter <file_gdb> [optional licensetype: 50=Standard, 60=Advanced");
                 Environment.Exit(0);
             }
 
             string FILEGDB = args[0];
+            esriLicenseProductCode LicType = esriLicenseProductCode.esriLicenseProductCodeStandard;
+
+            if (args.Length == 2)
+            {
+                if (Convert.ToInt32(args[1]) == 60)
+                {
+                    LicType = esriLicenseProductCode.esriLicenseProductCodeAdvanced;
+                }
+            }
             
 
             //ESRI License Initializer generated code.
             System.Console.WriteLine ("Getting license...");
-            m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { esriLicenseProductCode.esriLicenseProductCodeAdvanced },
-            new esriLicenseExtensionCode[] { });
+            m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { LicType }, new esriLicenseExtensionCode[] { });
+            //m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { esriLicenseProductCode.esriLicenseProductCodeStandard }, new esriLicenseExtensionCode[] { });
+            // m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { esriLicenseProductCode.esriLicenseProductCodeAdvanced }, new esriLicenseExtensionCode[] { });
 
 
             // Create a file geodatabase workspace factory.
@@ -71,7 +81,9 @@ namespace ESRIObjectConverter
 
                 switch (curUID)
                 {
+                    // 
                     // Handle non-Network classes
+                    case "{EA831E02-7D3D-11D4-9A1B-0001031AE963}":
                     case "{53D0BFE2-446E-11D3-88FC-00104B9F25F6}":
                     case "{53D0BFE5-446E-11D3-88FC-00104B9F25F6}":
                     case "{53D0BFE7-446E-11D3-88FC-00104B9F25F6}":

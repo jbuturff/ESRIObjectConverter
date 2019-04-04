@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ESRIObjectConverter")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Standard License")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Geodatabase.com")]
 [assembly: AssemblyProduct("ESRIObjectConverter")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.2")]
+[assembly: AssemblyFileVersion("1.0.0.2")]
